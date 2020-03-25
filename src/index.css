@@ -11,3 +11,109 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.active {
+  font-weight: bold;
+  background: #f2f2f2;
+}
+
+.ItemList {
+  display: flex;
+  height: calc(100vh - 56px);
+}
+#root {
+  min-height: 100vh;
+}
+
+.Sidebar {
+  background: fff;
+  width: 300px;
+}
+.Sidebar__item {
+  display: flex;
+  cursor: pointer;
+}
+.Sidebar__item svg #active {
+  fill: #5DCEB2;
+}
+
+.Sidebar__icon {
+  margin-left: auto;
+}
+
+.Content__wrapper {
+  background: #f2f2f2;
+  width: calc(100vw - 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Content {
+  width: 80%;
+  height: 80%;
+  background: #fff;
+}
+
+.Content__header {
+  height: 120px;
+  background: #5DCEB2;
+  color: #fff;
+  padding: 20px;
+  font-size: 22px;
+  box-sizing: border-box;
+}
+
+.Content__body {
+  display: flex;
+  padding: 20px;
+}
+.Content__details {
+  width: 50%;
+  margin-right: 20px;
+}
+.Content__title {
+  display: flex;
+  width: auto;
+  font-size: 14px;
+  color: rgb(134, 163, 235);
+  margin-bottom: 10px;
+}
+
+.Content__title svg #help {
+  fill: #636567;
+}
+
+.Content__label {
+  font-size: 13px;
+  color: #D0D0DC;
+  text-transform: uppercase;
+}
+
+.Content__field {
+  background: #F5F5F5;
+  color: #999;
+  font-size: 12px;
+  height: 24px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Content__actions .Content__title{
+  margin-bottom: 40px;
+}
+
+.Content__action {
+  height: 30px;
+  background: #F5F5F5;
+  padding-left: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #999;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
